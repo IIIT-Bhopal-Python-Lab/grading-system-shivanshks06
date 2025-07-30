@@ -24,7 +24,7 @@ def grades(mark):
         print("Invalid mark")
 
 while True:  #infinite loop to take multiple inputs
-        mark = (input("Enter the marks or -1 to exit: "))   #taking input from user
+        mark = input()   #taking input from user
         if mark == '-1':   #exit condition
             print("Exited successfully")
             break
