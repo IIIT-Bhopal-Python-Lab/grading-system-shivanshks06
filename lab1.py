@@ -1,7 +1,7 @@
 mark = int(input())
 if 90 <= mark <= 100:
     print("A")
-elif 75 <= mark <= 89:
+elif 75 <= mark<= 89:
     print("B")
 elif 60 <= mark <= 74:
     print("C")
