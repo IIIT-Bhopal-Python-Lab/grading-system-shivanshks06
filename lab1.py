@@ -1,34 +1,14 @@
-# #Write your code here in python 
-# n=int(input("enter a nuber"))
-# print(n)
-#function to determine grades
 def grades(mark):
-    mark = int(mark)  #convert input to integer
-    if 90<=mark<=100:
-        #check for A grade
+    mark = int(mark)
+    if 90 <= mark <= 100:
         print("A")
-    elif 75<=mark<=89:
-        #check for B grade
+    elif 75 <= mark <= 89:
         print("B")
-    elif 60<=mark<=74:
-        #check for C grade
+    elif 60 <= mark <= 74:
         print("C")
-    elif 40<=mark<=59:
-        #check for D grade
+    elif 40 <= mark <= 59:
         print("D")
-    elif 0<=mark<=39:
-        #check for F grade
+    elif 0 <= mark <= 39:
         print("F")
     else:
-        #if mark is invalid
         print("Invalid mark")
-
-while True:  #infinite loop to take multiple inputs
-        mark = input()   #taking input from user
-        if mark == '-1':   #exit condition
-            print("Exited successfully")
-            break
-        if mark.isdigit():  #check if input is a digit
-            grades(mark)   #function call
-        else:
-            print("Invalid marks")
